@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleDashboards.css">
+    <title>Client Dashboard</title>
+</head>
+<body>
+
+<div class="d-flex" style="max-width: 1600px; margin: 0 auto; position: relative">
+    <div class="let-sidebar-fix">
+        <div class="p-11-25">
+            <a href="#">
+                <img src="img/logo1.png" width="34" height="34" alt="">
+            </a>
+        </div>
+        <div class="avatar-area p-13-20 d-flex justify-content-center flex-column">
+            <div class="avatar-img">
+                <img src="img/avatar-img.png" alt="">
+                <div class="abs"></div>
+            </div>
+            <div class="mt-2">
+                <p class="fs-14-black">Alice Jonson <img src="img/arrow-down-small.png" alt="" style="float: right;margin-top: 5px;"></p>
+            </div>
+        </div>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <span class="icon-teamwork-1"></span>Campaigns</a>
+            <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <span class="icon-Group"></span>Directory</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                <span class="icon-Vector"></span>Bookmarks</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="icon-file-1"></span>Campaign Report</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-header p-10-35">
+            <div class="d-flex justify-content-between">
+                <div class="input-group m-0" style="width: 50%!important;">
+                    <span class="abs"><img src="img/search-icon.png" width="16" height="17" alt=""></span>
+                    <input type="text" class="form-control m-0" placeholder="Search the directory" aria-label="Search the directory" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="" type="button" id="button-addon2"><img src="img/search-settings.png" alt=""></button>
+                    </div>
+                    <button class="btn-header bg-red ml-4"><img src="img/filter.png" alt="" class="mr-2">Filter</button>
+                </div>
+
+                <div id="menu"><button class="btn-header bg-purple ml-4"><img src="img/import.png" alt="" class="mr-2">Import</button></div>
+                <div id="lgMenu" class="p-30-20">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="fs-24-bold-black">Filter</h2>
+                            <span id="exit">&times;</span>
+                        </div>
+                        <div class="w-100">
+                            <button class="btn-clear-filter">Clear Filter</button>
+                        </div>
+                        <h4 class="title-12 py-4">Location</h4>
+                        <div>
+                            <input type="text" placeholder="Find profiles in any of these locations" class="form-control">
+                            <div class="form-group text-center my-3">
+                                <form action="#">
+                                    <div class="form-check text-left mb-3 mt-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label fs-14-gray" for="gridCheck1">Europe</label>
+                                    </div>
+                                    <div class="form-check text-left mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                        <label class="form-check-label fs-14-gray" for="gridCheck2">North America</label>
+                                    </div>
+                                    <div class="form-check text-left mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label fs-14-gray" for="gridCheck3">South America</label>
+                                    </div>
+                                    <div class="form-check text-left mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck4">
+                                        <label class="form-check-label fs-14-gray" for="gridCheck4">Oceanla</label>
+                                    </div>
+                                    <div class="form-check text-left mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck5">
+                                        <label class="form-check-label fs-14-gray" for="gridCheck5">Asia</label>
+                                    </div>
+                                    <div class="form-check text-left mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck6">
+                                        <label class="form-check-label fs-14-gray" for="gridCheck6">Africa</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Follower range</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Networks</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Audience filters</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Post frequency</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Follower range</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Date range</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <span class="fs-12-light-gray">Gender</span>
+                                    <span><img src="img/padlock.png" alt=""></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="title-12 py-4">Bookmarks & lists</h4>
+                    </div>
+            </div>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias dicta minus nisi nostrum possimus recusandae voluptate! Corporis dicta dignissimos, eligendi, eum illum ipsam iste nemo neque veritatis voluptate voluptatum.
+            </div>
+            <div class="tab-pane fade show active p-30" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h2 class="fs-24-bold-black text-left m-b--30">Find influencers in these topics</h2>
+                <div class="d-flex flex-wrap" style="max-width: calc(100% - 350px); width: 100%">
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/Fashion.png" alt="">
+                        <h3 class="influecer-title">Fashion</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/Makeup-for-stunning-and-Adorable-Look-1%201.png" alt="">
+                        <h3 class="influecer-title">Beauty</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/travel-blog%201.png" alt="">
+                        <h3 class="influecer-title">Travel</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/turtle-caught%201.png" alt="">
+                        <h3 class="influecer-title">Animals</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/cardio-workout%201.png" alt="">
+                        <h3 class="influecer-title">Health & fitness</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/Local+188+Seafood+Paella+resized%201.png" alt="">
+                        <h3 class="influecer-title">Food & drink</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/maui-weddings-home1%201.png" alt="">
+                        <h3 class="influecer-title">Wedding</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/InteriorDesign_10_WashingtonDC_-Katherine-Robert%201.png" alt="">
+                        <h3 class="influecer-title">Home interior</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/inf9.png" alt="">
+                        <h3 class="influecer-title">Business & finance</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/inf10.png" alt="">
+                        <h3 class="influecer-title">Baking</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/inf11.png" alt="">
+                        <h3 class="influecer-title">Sport</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/inf12.png" alt="">
+                        <h3 class="influecer-title">Technology</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/Fashion.png" alt="">
+                        <h3 class="influecer-title">Fashion</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/Makeup-for-stunning-and-Adorable-Look-1%201.png" alt="">
+                        <h3 class="influecer-title">Beauty</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/travel-blog%201.png" alt="">
+                        <h3 class="influecer-title">Travel</h3>
+                    </div>
+                    <div class="mr-3 mb-3 influecer-area">
+                        <div class="abs"></div>
+                        <img src="img/turtle-caught%201.png" alt="">
+                        <h3 class="influecer-title">Animals</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <div class="mt-3">
+                    <table class="table table-bordered bg-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">Profile</th>
+                                <th scope="col">Social reach</th>
+                                <th scope="col">Engagement</th>
+                                <th scope="col">Estimated cost per post</th>
+                                <th scope="col">Post engagement</th>
+                                <th scope="col">Bio</th>
+                                <th scope="col">Topics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                in cupidatat officia. Voluptate excepteur commodo labore nisi
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#menu").on("click", function(){
+            $("#menu").css("display", "none");
+            $(".overlay").css("display", "block");
+            $("#lgMenu").addClass("enter");
+        });
+        $("#exit").on("click", function(){
+            $("#lgMenu").removeClass("enter");
+            $("#menu").css("display", "block");
+            $(".overlay").css("display", "none");
+        });
+    });
+</script>
+</body>
+</html>

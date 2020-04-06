@@ -1,0 +1,241 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.let-sidebar-fix {
+    width: 240px;
+    background-color: #ffffff;
+    color: #000;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 2px rgba(137, 138, 140, 0.2);
+    padding-bottom: 100px;
+}
+.let-sidebar-fix .nav-pills .nav-link  {
+    height: 40px;
+    border-left: 4px solid transparent;
+}
+.let-sidebar-fix .nav-pills .nav-link span {
+    width: 30px;
+    display: inline-block;
+}
+.let-sidebar-fix .nav-pills .nav-link.active span:before {
+    color: #FF2A13;
+}
+.let-sidebar-fix .nav-pills .nav-link.active,
+.let-sidebar-fix .nav-pills .show>.nav-link {
+    color: #FF2A13;
+    background: rgba(255, 42, 19, 0.1);
+    border-left: 4px solid red;
+    border-radius: 0;
+}
+.main-content {
+    width: calc(100% - 240px);
+    background: #F5F7FB;
+}
+.icon-file-1:before {
+    content: "\e900";
+    color: #4c505f;
+}
+.avatar-area {
+    border-bottom: 0.5px solid #E7E7E7;
+}
+.avatar-img {
+    position: relative;
+    width: 45px;
+    margin: 0 auto;
+}
+.avatar-img img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0;
+}
+.avatar-img .abs {
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    width: 11px;
+    height: 11px;
+    background: #01D294;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.fs-14-black {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #4C505F;
+}
+.btn-header {
+    width: 106px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+}
+.bg-red{
+    background: #FF2A13;
+}
+.bg-purple {
+    background: #7141D9;
+}
+.content-header {
+    border: 1px solid #EAEAEA;
+}
+.content-header .input-group .abs {
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    z-index: 1;
+}
+.content-header .input-group .form-control {
+    padding-left: 40px;
+    background: #FFFFFF;
+    border: 0.5px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 35px;
+}
+.influecer-area {
+    width: 210px;
+    height: 197px;
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+}
+.influecer-area .abs{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 197px;
+    background: rgba(255, 42, 19, 0.5);
+}
+
+.influecer-area:hover .abs{
+    display: block;
+ }
+.influecer-title {
+    position: absolute;
+    left: 23px;
+    bottom: 26px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+#button-addon2 {
+    width: 35px;
+    height: 35px;
+    border: 0;
+}
+
+/*right sideBar*/
+#menu {
+    right: 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.25s;
+    position: absolute;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 75px;
+}
+li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+#lgMenu {
+    width: 400px;
+    height: 100%;
+    top: 0;
+    right: -400px;
+    overflow:hidden;
+    background: #FFFFFF;
+    box-shadow: 0 20px 25px rgba(76, 80, 95, 0.25);
+    position: absolute;
+    z-index: 11;
+    display: none;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+#exit {
+    font-size: 3em;
+    color: #ccc;
+    cursor: pointer;
+}
+#exit:hover {
+    color:#FF9900;
+}
+
+#lgMenu.enter {
+    display: block;
+    right: 0;
+}
+
+/*end right sideBar*/
+
+.btn-clear-filter {
+    width: 100%;
+    height: 31px;
+    background: #F3F3F7;
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #AFAFAF;
+}
+.title-12 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #191D2C;
+}
+#lgMenu .form-control {
+    height: 42px;
+    left: 1218px;
+    top: 151px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#lgMenu .form-check {
+    padding-left: 0;
+}
+#lgMenu .form-check-label.fs-14-gray {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #737373;
+}
+.fs-12-light-gray {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #AFAFAF;
+}
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 8;
+    height: 100%;
+    background: rgba(76, 80, 95, 0.65);
+}
